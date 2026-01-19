@@ -157,6 +157,7 @@
     "build:browser-bundle": "esbuild --bundle browser/index.js --format=esm --target=es2020 --outfile=browser/index.bundle.js",
     "build:browser-bundle-min": "esbuild --minify --bundle browser/index.js --format=esm --target=es2020 --outfile=browser/index.bundle.min.js",
     "build:browser-umd": "rollup browser/index.bundle.js --format umd --name next-firebase-auth-edge -o browser/index.umd.js && rollup browser/index.bundle.min.js --compact --format umd --name next-firebase-auth-edge -o browser/index.umd.min.js",
+    "prepare": "npm run build",
     "clear": "rm -Rf lib esm browser",
     "test": "jest src --coverage",
     "lint": "eslint src/",
