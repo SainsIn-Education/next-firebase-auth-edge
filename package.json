@@ -163,7 +163,7 @@
     "check-circular-imports": "madge --extensions js,jsx,ts,tsx --ts-config tsconfig.json --circular src"
   },
   "peerDependencies": {
-    "next": "^14.0.0 || 15.0.0-rc.0 || ^15.0.0" || ^16.0.0"
+    "next": "^14.0.0 || 15.0.0-rc.0 || ^15.0.0 || ^16.0.0"
   },
   "dependencies": {
     "cookie": "^0.7.0",
